@@ -1,0 +1,39 @@
+{
+  "name": "03-mongodb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js",
+    "routes": "node routes/contactsRouter.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeavenlyOne/03-mongodb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeavenlyOne/03-mongodb/issues"
+  },
+  "homepage": "https://github.com/HeavenlyOne/03-mongodb#readme",
+  "description": "",
+  "dependencies": {
+    "commander": "^14.0.2",
+    "cors": "^2.8.5",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "joi": "^17.11.0",
+    "mongodb": "^7.0.0",
+    "mongoose": "^8.19.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "nodemon": "^3.0.2"
+  }
+}
