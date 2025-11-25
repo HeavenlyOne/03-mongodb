@@ -60,8 +60,8 @@ export const createContact = async (req, res) => {
 };
 
 export const updateContact = async (req, res) => {
-  console.log(req.body)
-  console.log(req.params)
+  // console.log(req.body)
+  // console.log(req.params)
   // if (!req.body) {
   //   console.log('err')
   //   return res.status(400).json({
@@ -90,7 +90,7 @@ export const updateStatusContact = async (req, res) => {
   const { id } = req.params;
   const { favorite } = req.body;
   const result = await Contact.findByIdAndUpdate(id, { favorite }, { new: true })
-  console.log(result)
+  // console.log(result)
   if (!result) {
     const error = HttpError(404);
     return res.status(error.status).json({
